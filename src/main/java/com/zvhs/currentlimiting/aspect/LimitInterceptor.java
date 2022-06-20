@@ -28,8 +28,14 @@ public class LimitInterceptor {
 
     private static final Logger logger = LoggerFactory.getLogger(LimitInterceptor.class);
 
+    /**
+     * 未知类型
+     */
     private static final String UNKNOWN = "unknown";
 
+    /**
+     * redis 操作对象
+     */
     private final RedisTemplate<String, Serializable> limitRedisTemplate;
 
     @Autowired
